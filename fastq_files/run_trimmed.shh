@@ -1,0 +1,24 @@
+#!/bin/bash
+
+# Paths
+TRIMMOMATIC_JAR="/home/djinho/rna-seqLDB/software/Trimmomatic-0.39/trimmomatic-0.39.jar"
+ADAPTERS="/home/djinho/rna-seqLDB/software/Trimmomatic-0.39/adapters/TruSeq3-PE.fa"
+INPUT_DIR="/home/djinho/rna-seqLDB/datasets/fastq_files"
+OUTPUT_DIR="/home/djinho/rna-seqLDB/datasets/fastq_files/trimmed"
+THREADS=4  # Set number of threads to use
+PHRED="phred33"  # Adjust if needed
+
+# Create output directory if it doesn't exist
+mkdir -p "$OUTPUT_DIR"
+
+# Loop through paired-end files
+for SAMPLE in SRR31110490 SRR31110491 SRR31110500 SRR31110501 SRR31110510 SRR31110511 SRR31110520 SRR31110521 SRR31110528 SRR31110533 SRR31110538 SRR31110543; do
+    echo "Processing $SAMPLE..."
+    java -jar "$TRIMMOMATIC_JAR" PE -threads "$THREADS" -"$PHRED" \
+        "$INPUT_DIR/${SAMPLE}_1.fastq.gz" "$INPUT_DIR/${SAMPLE}_2.fastq.gz" \
+        "$OUTPUT_DIR/${SAMPLE}_1_paired.fastq.gz" "$OUTPUT_DIR/${SAMPLE}_1_unpaired.fastq.gz" \
+        "$OUTPUT_DIR/${SAMPLE}_2_paired.fastq.gz" "$OUTPUT_DIR/${SAMPLE}_2_unpaired.fastq.gz" \
+        ILLUMINACLIP:"$ADAPTERS":2:30:10 LEADING:3 TRAILING:3 SLIDINGWINDOW:4:20 MINLEN:36
+done
+
+echo "Trimming completed!"
