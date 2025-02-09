@@ -50,21 +50,6 @@ Make sure the following dependencies are installed:
 ![Directory Structure](https://github.com/Djinho/rna-seqLDB/blob/main/directory_structure.png)
 
 
-### 🔹 Dot Plot (GO Enrichment)
-![Dot Plot](https://raw.githubusercontent.com/Djinho/rna-seqLDB/main/plots/GO_Dot_Plot.png)
-
-### 🔹 Heatmap (Expression Clustering)
-![Heatmap](https://raw.githubusercontent.com/Djinho/rna-seqLDB/main/plots/Heatmap_DEGs.png)
-
-### 🔹 PCA Plot (Dimensionality Reduction)
-![PCA Plot](https://raw.githubusercontent.com/Djinho/rna-seqLDB/main/plots/PCA_Plot.png)
-
-### 🔹 Volcano Plot (Differential Expression)
-![Volcano Plot](https://raw.githubusercontent.com/Djinho/rna-seqLDB/main/plots/Volcano_Plot.png)
-
-### 🔹 Volcano Plot (Differential Expression)
-![Volcano Plot](https://raw.githubusercontent.com/Djinho/rna-seqLDB/main/plots/Volcano_Plot.png)
-
 
 ---
 
@@ -139,5 +124,37 @@ Modify file paths before running the scripts.
 Adjust thread count (-T 4) based on your system.
 
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+### 🔹 Dot Plot (GO Enrichment)
+![Dot Plot](https://raw.githubusercontent.com/Djinho/rna-seqLDB/main/plots/GO_Dot_Plot.png)
+
+### 🔹 Heatmap (Expression Clustering)
+![Heatmap](https://raw.githubusercontent.com/Djinho/rna-seqLDB/main/plots/Heatmap_DEGs.png)
+
+### 🔹 PCA Plot (Dimensionality Reduction)
+![PCA Plot](https://raw.githubusercontent.com/Djinho/rna-seqLDB/main/plots/PCA_Plot.png)
+
+### 🔹 Volcano Plot (Differential Expression)
+![Volcano Plot](https://raw.githubusercontent.com/Djinho/rna-seqLDB/main/plots/Volcano_Plot.png)
+
+### 🔹 Volcano Plot (Differential Expression)
+![Volcano Plot](https://raw.githubusercontent.com/Djinho/rna-seqLDB/main/plots/Volcano_Plot.png)
 
 
