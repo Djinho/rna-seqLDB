@@ -128,15 +128,17 @@ Adjust thread count (-T 4) based on your system.
 Here are the key plots generated from the RNA-Seq analysis:
 
 ### 🔹 Dot Plot (GO Enrichment)
-![Dot Plot](https://github.com/Djinho/rna-seqLDB/blob/main/plots/Dot_Plot.png)
+![Dot Plot](https://raw.githubusercontent.com/Djinho/rna-seqLDB/main/plots/GO_Dot_Plot.png)
 
 ### 🔹 Heatmap (Expression Clustering)
-![Heatmap Plot](https://github.com/Djinho/rna-seqLDB/blob/main/plots/Heatmap_plot.png)
+![Heatmap](https://raw.githubusercontent.com/Djinho/rna-seqLDB/main/plots/Heatmap_DEGs.png)
 
 ### 🔹 PCA Plot (Dimensionality Reduction)
-![PCA Plot](https://github.com/Djinho/rna-seqLDB/blob/main/plots/PCA_plot.png)
+![PCA Plot](https://raw.githubusercontent.com/Djinho/rna-seqLDB/main/plots/PCA_Plot.png)
 
 ### 🔹 Volcano Plot (Differential Expression)
+![Volcano Plot](https://raw.githubusercontent.com/Djinho/rna-seqLDB/main/plots/Volcano_Plot.png)
+
 ![Volcano Plot](https://github.com/Djinho/rna-seqLDB/blob/main/plots/Volcano_plot.png)
 
 
