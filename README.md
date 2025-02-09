@@ -63,40 +63,30 @@ bash SRA_2_FAST.sh
 
 Step 2: Quality Control
 bash
-Copy
-Edit
 cd datasets/fastq_files
 bash run_fastqc.sh
 📝 What it does: Runs FastQC and saves results in fastqc_results/.
 
 Step 3: Trim Adapters
 bash
-Copy
-Edit
 cd datasets/fastq_files
 bash run_trimming.sh
 📝 What it does: Removes adapter sequences using Trimmomatic.
 
 Step 4: Index the Genome
 bash
-Copy
-Edit
 cd genome_gtf
 bash generate_star_index.sh
 📝 What it does: Generates a STAR genome index (needed for alignment).
 
 Step 5: Align Reads
 bash
-Copy
-Edit
 cd alignment
 bash align_samples.sh
 📝 What it does: Aligns reads to the GRCh38 reference genome.
 
 Step 6: Count Gene Expression
 bash
-Copy
-Edit
 cd datasets/alignment
 bash feature_counts.sh
 📝 What it does: Runs featureCounts to generate a gene count matrix.
