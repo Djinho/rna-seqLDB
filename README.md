@@ -52,39 +52,6 @@ Make sure the following dependencies are installed:
 ---
 
 
-
-### ***Step 1: Download Raw Data***
-```bash
-cd datasets
-bash SRA_2_FAST.sh
-
-### **Step 2: Quality Control**
-```bash
-cd datasets/fastq_files
-./run_fastqc.sh
-
-
-### **Step 3: Trim Adapters**
-'''bash
-cd datasets/fastq_files
-./run_trimming.sh
-
-### **Step 4: Index the Genome**
-'''bash
-cd genome_gtf
-./generate_star_index.sh
-
-### **Step 5: Align Reads**
-'''bash
-cd alignment
-./align_samples.sh
-
-### **Step 6: Count Gene Expression**
-'''bash
-cd datasets/alignment
-./feature_counts.sh
-
-
 📊 Expected Output
 Step	Output File	Description
 FastQC	*_fastqc.html	Quality control report
