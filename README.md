@@ -51,7 +51,7 @@ Make sure the following dependencies are installed:
 
 ---
 
-## ⚡ Running the Pipeline
+
 
 ### **Step 1: Download Raw Data**
 ```bash
