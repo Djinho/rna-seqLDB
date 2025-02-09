@@ -53,7 +53,7 @@ Make sure the following dependencies are installed:
 
 
 
-### **Step 1: Download Raw Data**
+### ***Step 1: Download Raw Data***
 ```bash
 cd datasets
 bash SRA_2_FAST.sh
