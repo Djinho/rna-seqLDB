@@ -124,14 +124,13 @@ Adjust thread count (-T 4) based on your system.
 
 
 ### 🔹 Dot Plot (GO Enrichment)
-![Dot Plot](https://github.com/Djinho/rna-seqLDB/blob/main/plots/GO_Dot_Plot.png)
+![Dot Plot](https://raw.githubusercontent.com/Djinho/rna-seqLDB/main/plots/GO_Dot_Plot.png)
 
 ### 🔹 Heatmap (Expression Clustering)
-![Heatmap](https://github.com/Djinho/rna-seqLDB/blob/main/plots/Heatmap_DEGs.png)
+![Heatmap](https://raw.githubusercontent.com/Djinho/rna-seqLDB/main/plots/Heatmap_DEGs.png)
 
 ### 🔹 PCA Plot (Dimensionality Reduction)
-![PCA Plot](https://github.com/Djinho/rna-seqLDB/blob/main/plots/PCA_Plot.png)
+![PCA Plot](https://raw.githubusercontent.com/Djinho/rna-seqLDB/main/plots/PCA_Plot.png)
 
 ### 🔹 Volcano Plot (Differential Expression)
-![Volcano Plot](https://github.com/Djinho/rna-seqLDB/blob/main/plots/Volcano_Plot.png)
-
+![Volcano Plot](https://raw.githubusercontent.com/Djinho/rna-seqLDB/main/plots/Volcano_Plot.png)
