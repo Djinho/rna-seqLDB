@@ -35,21 +35,19 @@ This pipeline is designed to analyze **RNA-Seq data related to LBD (Lewy Body De
 ### **Software**
 Make sure the following dependencies are installed:
 
-| Tool         | Purpose                  | Installation Command |
-|-------------|--------------------------|----------------------|
-| FastQC      | Quality control           | `sudo apt install fastqc` |
-| Trimmomatic | Adapter trimming          | `wget https://github.com/usadellab/Trimmomatic` |
-| STAR        | Read alignment            | `conda install -c bioconda star` |
-| samtools    | BAM processing            | `conda install -c bioconda samtools` |
-| featureCounts | Gene counting           | `conda install -c bioconda subread` |
-| R + DESeq2  | Differential Expression   | `R -e 'install.packages("DESeq2")'` |
+| Tool         | Purpose                  | Installation Command                      |
+|--------------|--------------------------|-------------------------------------------|
+| FastQC       | Quality control          | `sudo apt install fastqc`                |
+| Trimmomatic  | Adapter trimming         | `wget https://github.com/usadellab/Trimmomatic` |
+| STAR         | Read alignment           | `conda install -c bioconda star`         |
+| samtools     | BAM processing           | `conda install -c bioconda samtools`     |
+| featureCounts| Gene counting            | `conda install -c bioconda subread`      |
+| R + DESeq2   | Differential Expression  | `R -e 'install.packages("DESeq2")'`      |
 
 ---
 
 ## 📂 Directory Structure
 ![Directory Structure](https://github.com/Djinho/rna-seqLDB/blob/main/directory_structure.png)
-
-
 
 ---
 
@@ -59,62 +57,6 @@ Make sure the following dependencies are installed:
 ```bash
 cd datasets
 bash SRA_2_FAST.sh
-📝 What it does: Downloads sequencing data from SraAccList.csv.
-
-Step 2: Quality Control
-bash
-cd datasets/fastq_files
-bash run_fastqc.sh
-📝 What it does: Runs FastQC and saves results in fastqc_results/.
-
-Step 3: Trim Adapters
-bash
-cd datasets/fastq_files
-bash run_trimming.sh
-📝 What it does: Removes adapter sequences using Trimmomatic.
-
-Step 4: Index the Genome
-bash
-cd genome_gtf
-bash generate_star_index.sh
-📝 What it does: Generates a STAR genome index (needed for alignment).
-
-Step 5: Align Reads
-bash
-cd alignment
-bash align_samples.sh
-📝 What it does: Aligns reads to the GRCh38 reference genome.
-
-Step 6: Count Gene Expression
-bash
-cd datasets/alignment
-bash feature_counts.sh
-📝 What it does: Runs featureCounts to generate a gene count matrix.
-
-📊 Expected Output
-Step	Output File	Description
-FastQC	*_fastqc.html	Quality control report
-Trimming	*_trimmed.fastq.gz	Cleaned reads
-Alignment	*.bam	Mapped reads
-featureCounts	gene_counts_matrix.txt	Gene count matrix
-💡 Troubleshooting
-🔹 Common Issues & Fixes
-Error Message	Possible Cause	Solution
-Command not found	Missing dependency	Install the required tool (conda install ...)
-Permission denied	Script lacks execution rights	Run chmod +x script.sh
-Low alignment rate	Poor read quality	Check FastQC results and consider re-trimming
-📜 Citation
-If you use this pipeline, please cite:
-
-STAR: Dobin et al., 2013
-featureCounts: Liao et al., 2014
-Trimmomatic: Bolger et al., 2014
-📌 Additional Notes
-Modify file paths before running the scripts.
-Adjust thread count (-T 4) based on your system.
-
-
-
 
 
 
