@@ -58,7 +58,7 @@ Make sure the following dependencies are installed:
 cd datasets
 bash SRA_2_FAST.sh
 
-### ***Step 2: Quality Control***
+### **Step 2: Quality Control**
 ```bash
 cd datasets/fastq_files
 ./run_fastqc.sh
