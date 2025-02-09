@@ -134,3 +134,6 @@ Adjust thread count (-T 4) based on your system.
 
 ### 🔹 Volcano Plot (Differential Expression)
 ![Volcano Plot](https://raw.githubusercontent.com/Djinho/rna-seqLDB/main/plots/Volcano_Plot.png)
+
+### 🔹 Volcano Plot (Differential Expression)
+![Volcano Plot](https://raw.githubusercontent.com/Djinho/rna-seqLDB/main/plots/Volcano_Plot.png)
