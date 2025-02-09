@@ -62,7 +62,11 @@ bash SRA_2_FAST.sh
 
 
 
-
+Step 4: Index the Genome
+cd genome_gtf
+chmod +x generate_star_index.sh
+./generate_star_index.sh
+****
 
 
 
