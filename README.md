@@ -58,21 +58,43 @@ Make sure the following dependencies are installed:
 cd datasets
 bash SRA_2_FAST.sh
 
+### **Step 3: Trim Adapters**
+'''bash
+cd datasets/fastq_files
+./run_trimming.sh
 
+### **Step 3: Trim Adapters**
+'''bash
+cd datasets/fastq_files
+./run_trimming.sh
 
-
-
-Step 4: Index the Genome
+### **Step 4: Index the Genome**
+'''bash
 cd genome_gtf
-chmod +x generate_star_index.sh
 ./generate_star_index.sh
-****
+
+### **Step 5: Align Reads**
+'''bash
+cd alignment
+./align_samples.sh
+
+### **Step 6: Count Gene Expression**
+'''bash
+cd datasets/alignment
+./feature_counts.sh
 
 
-
-
-
-
+📊 Expected Output
+Step	Output File	Description
+FastQC	*_fastqc.html	Quality control report
+Trimming	*_trimmed.fastq.gz	Cleaned reads
+Alignment	*.bam	Mapped reads
+featureCounts	gene_counts_matrix.txt	Gene count matrix
+💡 Troubleshooting
+Error Message	Possible Cause	Solution
+Command not found	Missing dependency	Install the required tool (e.g., conda install ...)
+Permission denied	Script lacks execution rights	Run chmod +x script.sh
+Low alignment rate	Poor read quality	Check FastQC results and consider re-trimming
 
 
 
