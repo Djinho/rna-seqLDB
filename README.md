@@ -122,6 +122,7 @@ Trimmomatic: Bolger et al., 2014
 Modify file paths before running the scripts.
 Adjust thread count (-T 4) based on your system.
 
+---
 
 ### 🔹 Dot Plot (GO Enrichment)
 ![Dot Plot](https://raw.githubusercontent.com/Djinho/rna-seqLDB/main/plots/GO_Dot_Plot.png)
