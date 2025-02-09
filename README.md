@@ -130,23 +130,3 @@ Adjust thread count (-T 4) based on your system.
 
 
 
-# 🧬 RNA-Seq Analysis Pipeline
-
-## 📌 Key Data Visualizations
-
-### 🎯 Dot Plot (GO Enrichment Analysis)
-Shows biological pathways affected by significantly expressed genes.
-![GO Enrichment Dot Plot](images/dotplot.png)
-
-### 🔥 Heatmap (Differential Expression)
-Visualizes differentially expressed genes across samples.
-![Heatmap](images/heatmap.png)
-
-### 📊 PCA Plot
-Principal Component Analysis (PCA) shows variance between samples.
-![PCA Plot](images/pca_plot.png)
-
-### 🌋 Volcano Plot
-Highlights upregulated and downregulated genes in a differential expression study.
-![Volcano Plot](images/volcano_plot.png)
-
