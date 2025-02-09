@@ -58,10 +58,11 @@ Make sure the following dependencies are installed:
 cd datasets
 bash SRA_2_FAST.sh
 
-### **Step 3: Trim Adapters**
-'''bash
+### ***Step 2: Quality Control***
+```bash
 cd datasets/fastq_files
-./run_trimming.sh
+./run_fastqc.sh
+
 
 ### **Step 3: Trim Adapters**
 '''bash
