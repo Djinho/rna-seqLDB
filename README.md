@@ -47,37 +47,8 @@ Make sure the following dependencies are installed:
 ---
 
 ## 📂 Directory Structure
+![Directory Structure](https://github.com/Djinho/rna-seqLDB/blob/main/directory_structure.png)
 
-rna-seqLDB/
-├── 📂 alignment/ # STAR alignments
-│   ├── 📄 align_samples.sh
-│   ├── 📄 feature_counts.sh
-│   ├── 📄 gene_counts_matrix.txt
-│   ├── 📄 *.bam (Aligned BAM Files)
-│   └── 📄 *.bai (BAM Index Files)
-├── 📂 datasets/ # Data & Scripts
-│   ├── 📄 SRA_2_FAST.sh
-│   ├── 📂 fastq_files/ # Raw FASTQ Data
-│   │   └── 📄 *.fastq.gz
-│   ├── 📂 fastqc_results/ # FastQC Outputs
-│   │   ├── 📄 *.html (Reports)
-│   │   └── 📄 *.zip (Raw Data)
-│   ├── 📂 trimmed/ # Trimmed Reads
-│   │   ├── 📄 *_paired.fastq.gz
-│   │   └── 📄 *_unpaired.fastq.gz
-│   ├── 📄 run_fastqc.sh
-│   └── 📄 run_trimming.sh
-├── 📂 genome_gtf/ # Genome Files
-│   ├── 📄 Homo_sapiens.GRCh38.113.gtf
-│   ├── 📄 Homo_sapiens.GRCh38.dna.primary_assembly.fa
-│   └── 📂 STAR_index/
-│       ├── 📄 Genome
-│       ├── 📄 SA
-│       ├── 📄 chrName.txt
-│       └── 📄 sjdbList.out.tab
-└── 📂 scripts/ # Custom Scripts
-    ├── 📄 generate_star_index.sh
-    └── 📄 investigate_env.sh
 
 ---
 
